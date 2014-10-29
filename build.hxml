@@ -1,0 +1,9 @@
+-main Main
+-cp src
+-js bin/js/main.js
+#--macro Macro.divide()
+
+#--next 
+#-main Macro
+#-cp src
+#-js bin/macro.js

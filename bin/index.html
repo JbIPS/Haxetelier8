@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+      <meta charset="UTF-8">
+      <title>Haxetelier #8</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <style type="text/css">
+         div.tab-pane{
+            padding: 10px;
+         }
+      </style>
+   </head>
+   <body>
+   	<h1 class="page-header">Bienvenue à l'Haxetelier #8</h1>
+      <ul class="nav nav-tabs" role="tablist">  
+        <li role="presentation" class="active"><a href="#enum" role="tab" data-toggle="tab">Enum</a></li>
+        <li role="presentation"><a href="#abstract" role="tab" data-toggle="tab">Abstract</a></li>
+        <li role="presentation"><a href="#overload" role="tab" data-toggle="tab">Overloading</a></li>
+        <li role="presentation"><a href="#array" role="tab" data-toggle="tab">Array Access</a></li>
+        <li role="presentation"><a href="#selective" role="tab" data-toggle="tab">Selective</a></li>
+        <li role="presentation"><a href="#macro" role="tab" data-toggle="tab">Macro ?</a></li>
+      </ul>
+
+      <div class="tab-content">
+         <div role="tabpanel" class="tab-pane active" id="enum">
+         	<label for="mood">Vous êtes : </label>
+         	<input id="mood" type="text">
+         </div>
+         <div role="tabpanel" class="tab-pane" id="abstract">
+           <p id="sandbox"></p>
+         </div>
+         <div role="tabpanel" class="tab-pane" id="overload">
+           <ol id="slice"></ol>
+         </div>
+         <div role="tabpanel" class="tab-pane" id="array">
+           <p id="sandboxArray"></p>
+         </div>
+         <div role="tabpanel" class="tab-pane" id="selective">
+           <p id="sandboxSelective"></p>
+         </div>
+         <div role="tabpanel" class="tab-pane" id="macro">
+      	  <p id="sandboxMacro"></p>
+         </div>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   	<script src="js/main.js"></script>
+      <script type="text/javascript">
+      $('ul a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+</script>
+   </body>
+</html>
